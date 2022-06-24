@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src='app.js' defer></script>
+</head>
+<body>
+    <div class='main-container'>
+        <div class='top-container'>
+            <h3>calc</h3>
+            <h4>THEME</h4>
+            <div class='range-container'>
+                <label for="irange"> 1&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 3</label>
+                <input data-range type="range" name="irange" id="irange" min='1' max='3' value='1'>
+            </div>
+        </div>
+        <div class='output-container'>
+            <div id='inputc' >
+                <p data-previous-output id='p-output'></p>
+                <p data-current-output id='c-output'></p>
+            </div> 
+        </div>
+        <div class='number-container'>
+            <ul class='list-container'>
+                <li data-number class='item'>7</li>
+                <li data-number class='item'>8</li>
+                <li data-number class='item'>9</li>
+                <li data-delete class='item item-blu'>DEL</li>
+
+                <li data-number class='item'>4</li>
+                <li data-number class='item'>5</li>
+                <li data-number class='item'>6</li>
+                <li data-operation class='item'>+</li>
+
+                <li data-number class='item'>1</li>
+                <li data-number class='item'>2</li>
+                <li data-number class='item'>3</li>
+                <li data-operation class='item'>-</li>
+
+                <li data-number class='item'>.</li>
+                <li data-number class='item'>0</li>
+                <li data-operation class='item'>/</li>
+                <li data-operation class='item'>x</li>
+
+                <li data-reset class='item item-blu item-large'>RESET</li>
+                <li data-equals class='item item-red item-large'>=</li>
+            </ul>
+        </div>
+    </div>   
+</body>
+</html>

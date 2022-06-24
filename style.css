@@ -1,0 +1,158 @@
+*{
+
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(222, 26%, 31%); 
+}
+
+.main-container{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 10vh;
+font-family: 'League Spartan', sans-serif;
+
+}
+
+.top-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: hsl(30, 25%, 89%);
+    
+}
+
+.top-container h3{
+    margin-right: 150px;
+    font-size: 30px;
+}
+.top-container h4{
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.range-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    color: hsl(30, 25%, 89%);
+    font-size: 13px;
+}
+
+#irange{
+    background-color: hsl(223, 31%, 20%);
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    border-radius: 15px;
+    padding: 3px 5px;
+
+}
+
+/* #irange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    
+} */
+  
+#irange::-moz-range-thumb {
+    background: hsl(6, 63%, 50%);
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+}
+
+#inputc{
+    font-family: 'League Spartan', sans-serif;
+    text-align: end;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+
+    
+}
+
+#p-output, #c-output{
+    margin: 0;
+}
+
+#c-output{
+    font-size: 28px;
+    padding-top: 5px;
+    
+}
+
+.number-container{
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    
+}
+
+.list-container{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 25px;
+    
+}
+
+.item{
+    background-color:  hsl(30, 25%, 89%);
+    color: hsl(224, 28%, 35%);
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 7px;  
+    box-shadow: 0px 4px  hsl(28, 16%, 65%);  
+}
+
+.item-blu{
+    background-color:  hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 4px  hsl(224, 28%, 35%);  
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.item-red{
+    background-color:  hsl(6, 63%, 50%);
+    color: white;
+    box-shadow: 0px 4px  hsl(6, 70%, 34%);  
+}
+
+.item-large{
+    width: 136px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.item:hover{
+    background-color:  hsl(48, 100%, 99%);
+}
+.item-blu:hover{
+   background-color: hsl(224, 24%, 73%);
+}
+
+.item-red:hover{
+   background-color: hsl(7, 55%, 61%);
+}
